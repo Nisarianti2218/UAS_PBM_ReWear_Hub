@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ReWear_Hub</string>
+    <string name="bg_image_desc">Background login</string>
+    <string name="back_button">Back Button</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="favorite_icon">Favorite Icon</string>
+    <string name="edit_profile_icon">Edit Profile Icon</string>
+    <string name="settings_icon">Settings Icon</string>
+</resources>

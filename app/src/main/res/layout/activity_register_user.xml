@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/register_user_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Spacer Top -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+
+        <!-- Back Arrow -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="start"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/arrow"
+                android:contentDescription="Kembali"
+                android:clickable="true"
+                android:focusable="true"
+                android:scaleType="centerInside" />
+        </LinearLayout>
+
+        <!-- Spacer -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <!-- Judul -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Formulir Pendaftaran"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Input: Nama -->
+        <EditText
+            android:id="@+id/namaEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_rounded"
+            android:hint="Masukkan nama Anda"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Input: Email -->
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_rounded"
+            android:hint="Masukkan email Anda"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Input: Password -->
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_rounded"
+            android:hint="Masukkan Sandi Anda"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Input: Konfirmasi Password -->
+        <EditText
+            android:id="@+id/konfirmasiPasswordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_rounded"
+            android:hint="Konfirmasi sandi Anda"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Input: Lokasi -->
+        <EditText
+            android:id="@+id/lokasiEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_rounded"
+            android:hint="Lokasi/Lokakarya Alamat"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Button Daftar -->
+        <Button
+            android:id="@+id/daftarButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daftar"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#4A69BD"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp" />
+
+        <!-- Sudah punya akun? Masuk -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/masukText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sudah Mempunyai Akun?"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/masukLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Masuk"
+                android:textColor="#4A69BD"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Spacer Bottom -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+    </LinearLayout>
+</ScrollView>

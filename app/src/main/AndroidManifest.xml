@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ReWear_Hub"
+        tools:targetApi="31">
+
+        <!-- Splash screen (MainActivity) -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Login screen -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+
+        <!-- Role Selection screen -->
+        <activity
+            android:name=".RoleSelectionActivity"
+            android:exported="true" />
+
+        <!-- Register Konsumen screen -->
+        <activity
+            android:name=".RegisterKonsumenActivity"
+            android:exported="true" />
+
+        <!-- Register Penjahit screen -->
+        <activity
+            android:name=".RegisterPenjahitActivity"
+            android:exported="true" />
+
+        <!-- Dashboard Pengguna -->
+        <activity
+            android:name=".DashboardPenggunaActivity"
+            android:exported="true" />
+
+        <!-- Custom Request -->
+        <activity
+            android:name=".CustomRequestActivity"
+            android:exported="false" />
+
+        <!-- Toko Activity -->
+        <activity
+            android:name=".TokoActivity"
+            android:exported="true" />
+
+        <!-- Profile -->
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="true" />
+
+        <!-- Notification -->
+        <activity
+            android:name=".NotifikasiActivity"
+            android:exported="true" />
+
+        <!-- Chat -->
+        <activity
+            android:name=".ChatActivity"
+            android:exported="true" />
+
+        <!-- Rating / Penilaian Activity -->
+        <activity
+            android:name=".RatingActivity"
+            android:exported="true" />
+
+        <!-- Main Penjahit Activity -->
+        <activity
+            android:name=".MainPenjahitActivity"
+            android:exported="true" />
+
+        <!-- Notifikasi Penjahit Activity -->
+        <activity
+            android:name=".NotifikasiPenjahitActivity"
+            android:exported="true" />
+
+    </application>
+
+</manifest>
